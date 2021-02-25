@@ -132,3 +132,138 @@ else{
 console.log(century);
 */
 
+/*
+//Type conversion
+const birthYear = "1999";
+console.log(birthYear + 18);
+console.log(Number(birthYear) + 21);
+
+console.log(Number('Naren'));
+console.log(typeof(NaN));
+
+console.log(String(23), 23);
+
+//Type coercion
+console.log('I am ' + String(23) + ' years old');
+console.log('23' - '10' - '5'); //Strings converted to number and calculation done
+console.log('23' + '10' + '5'); //Concatenation occurs
+console.log('23' * "2");
+console.log('23' / "2");
+console.log('23' > '18');
+
+let n = '1' + 1;
+n = n-1;
+console.log(n); */
+
+/*
+//Truthy and falsy values
+// 5 falsy values : 0, '', undefined, null, NaN
+console.log(0);
+console.log();
+console.log(undefined);
+console.log(Boolean('Naren'));
+console.log(Boolean(1));
+console.log(Boolean({}));
+
+const money = 10;
+if(money) {
+    console.log("Dont spend");
+}
+else{
+    console.log("You should work hard");
+}
+
+let height;
+if(height) {
+    console.log("Height is defined");
+}
+else {
+    console.log("Height is undefined");
+} */
+
+//Equality operators == vs ===
+/* const age  = 19;
+if(age === 18) console.log('Adult');
+
+const favorite = Number(prompt("What's your favorite number ?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if(favorite === 23) {
+    console.log("23 is an amazing number");
+}
+else if(favorite === 7) {
+    console.log("7 is an amazing number");
+}
+else if(favorite === 10) {
+    console.log("10 is an amaaing number");
+}
+else {
+    console.log("Not in my options");
+} */
+
+/*
+//Logical Operators
+const hasDriverLicense = true; //A
+const hasGoodVision = true; //B
+
+//console.log(hasDriverLicense && hasGoodVision);
+//console.log(hasDriverLicense || hasGoodVision)
+//console.log(!hasGoodVision , !hasDriverLicense);
+
+const isTired = false
+
+if(hasDriverLicense && hasGoodVision && !isTired) {
+    console.log("Eligible to drive");
+}
+else{
+    console.log("Someone has to drive");
+}
+*/
+
+/*
+//Switch Statement
+const day = prompt("Enter a day to know your schedule");
+
+switch(day) {
+    case 'monday':
+        console.log("Planning");
+        break;
+    
+    case 'tuesday' :
+        console.log("Elaborating");
+        break;
+    
+    case 'wednesday' :
+        console.log("Describing");
+        break;
+
+    case 'thursday' :
+    case 'friday' :
+        console.log("Completion");
+        break;
+
+        default:
+        console.log("Not a valid day");    
+        break;
+}
+*/
+
+/*
+//Statements and Expressions 
+3+4; // expression
+true && false // expression
+
+if(23 > 10) {
+    const str = '23 is bigger' //it is an statement which returns no value
+}
+*/
+
+/*Ternary Operator
+const age = 16;
+age>=18 ? console.log("Eligible to drive") : console.log("Not eligible to drive");
+
+const wine = age>=18 ? "wine" : "water" ;
+console.log(wine);
+console.log(`I like to drink ${wine}`);
+console.log(`I like to drink ${age>=18 ? "wine" : "water"}`); // Using template literals */
