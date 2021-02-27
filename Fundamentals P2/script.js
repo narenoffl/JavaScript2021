@@ -54,3 +54,43 @@ const yearsUntilRetirement = (birthYear,firstname) => {
 }
 
 console.log(yearsUntilRetirement(1999, 'naren')); */
+
+
+/*Function calling other functions
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice =`Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2,3)); */
+
+/*Reviewing Functions
+
+const calcAge = function(birthYear) {
+    return 2021-birthYear;
+}
+
+const yearsUntilRetirement = function(birthYear,firstname)  {
+    const age = calcAge(birthYear);
+    const retirementAge = 60 - age;
+    if (retirementAge > 0) {
+        console.log(`${firstname} retires in ${retirementAge} years`);
+        return retirementAge;
+        }
+    else{
+        console.log(`${firstname} already retired`);
+        return -1;
+    }
+    
+}
+
+console.log(yearsUntilRetirement(1999, 'naren'));  */
+
