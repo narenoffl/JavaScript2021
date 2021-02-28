@@ -94,6 +94,88 @@ const yearsUntilRetirement = function(birthYear,firstname)  {
 
 console.log(yearsUntilRetirement(1999, 'naren'));  */
 
-//Introduction to Arrays
+/*Introduction to Arrays
 
+const friend1 = "Michael";
+const friend2 = "Scott";
+const friend3 = "Beasley";
 
+const friends = ['Michael', 'Scott', 'Beasley'];
+console.log(friends);
+
+const yeah = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+friends[2] = 'Halpert';
+console.log(friends);
+
+const firstName = "Naren";
+const perDetails = [firstName, "Puru", 2021-1999, 'student', friends];
+console.log(perDetails);
+
+// Exercise
+const calcAge = function (birthYeah) {
+    return 2037 - birthYeah;
+  }
+  const years = [1990, 1967, 2002, 2010, 2018];
+
+  const age1 = calcAge(years[0]);
+  const age2 = calcAge(years[1]);
+  const age3 = calcAge(years[years.length-1]);
+  console.log(age1, age2, age3);
+
+  const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+  console.log(ages); */
+
+  /*Basic Array Operations
+  const friends = ['Michael', 'Scott', 'Beasley'];
+  
+  //Add new elements
+  const newLength = friends.push('Schrute');
+  console.log(friends);
+  console.log(newLength);
+
+  friends.unshift('Dwight');
+  console.log(friends);
+
+  //Remove elements
+  friends.pop(); // Removes only last element
+  const popped = friends.pop();
+  console.log(popped);
+  console.log(friends);
+
+  friends.shift();
+  console.log(friends);
+
+  friends.push("Hussey");
+  console.log(friends.indexOf("Scott"));
+  console.log(friends.includes("Michael"));
+  console.log(friends.includes("Hussey"));
+
+  if(friends.includes("Scott")) {
+      console.log("We have that value");
+  }
+
+else{
+    console.log("Not available");
+} */
+
+//Introduction to Objects
+
+const narenArray = [
+    "Naren",
+    'student',
+    2021-1999,
+    ['Scott', 'Beasley', 'Michael']
+];
+
+const naren = {
+   firstName: "Naren",
+   job: 'student',
+   age: 2021-1999,
+   friends:  ['Scott', 'Beasley', 'Michael']
+};
