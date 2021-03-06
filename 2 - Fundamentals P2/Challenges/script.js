@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*CHALLENGE 1
 Your tasks:
@@ -97,7 +97,7 @@ respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 tall. */
 
- /* const mark = {
+/* const mark = {
     firstName: 'Mark',
     weight: 78,
     height: 1.69,
@@ -136,9 +136,9 @@ else if (john.BMI > mark.calcBMI) {
  } 
  */
 
- // --------------------------------------------------------------------------------------//
+// --------------------------------------------------------------------------------------//
 
- /* Challenge 4
+/* Challenge 4
  Let's improve Steven's tip calculator even more, this time using loops!
 Your tasks:
 1. Create an array 'bills' containing all 10 test bill values
@@ -150,34 +150,33 @@ Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
 Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
 tips and totals arrays */
 
-const calcTip = function(bill) {
-    return bill>=50 && bill<=300 ? (15/100) * bill : (20/100) * bill; }
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? (15 / 100) * bill : (20 / 100) * bill;
+};
 
-const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const bill = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-
-for (let i = 0 ; i < bill.length; i++)   {
-     tips.push(calcTip(bill[i]));
-     totals.push(tips + bill[i]);
-} 
+for (let i = 0; i < bill.length; i++) {
+  tips.push(calcTip(bill[i]));
+  totals.push(tips + bill[i]);
+}
 
 console.log(bill, tips, totals);
 
 //Calculating Average
 
-const calcAverage = function(arr) {
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        //sum = sum + i;
-        sum += arr[i];
-    }
-    console.log(sum);
-    return sum / arr.length;
-}
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    //sum = sum + i;
+    sum += arr[i];
+  }
+  console.log(sum);
+  return sum / arr.length;
+};
 
-console.log(calcAverage([2,3,7]));
+console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
-
