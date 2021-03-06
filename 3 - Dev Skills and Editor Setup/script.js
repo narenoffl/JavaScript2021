@@ -1,5 +1,5 @@
 // Remember, we're gonna use strict mode in all scripts now!
-"use strict";
+'use strict';
 
-console.log("naren");
-console.log("puru");
+console.log('naren');
+console.log('puru');
